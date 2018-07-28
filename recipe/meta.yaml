@@ -1,6 +1,6 @@
 {% set name = "Keras-Applications" %}
-{% set version = "1.0.2" %}
-{% set sha256 = "6d8923876a7f7f2d459dd7efe3b10830f316f714b707f0c136e7f00c63035338" %}
+{% set version = "1.0.4" %}
+{% set sha256 = "37bd2f3ba9c0e0105c193999b1162fd99562cf43e5ef06c73932950ecc46d085" %}
 
 package:
   name: {{ name|lower }}
