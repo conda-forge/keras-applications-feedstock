@@ -1,0 +1,25 @@
+From 313bc05c924ad17d50726f82364c8cff9db87a29 Mon Sep 17 00:00:00 2001
+From: Jonathan Helmus <jjhelmus@gmail.com>
+Date: Wed, 22 Aug 2018 16:18:22 -0500
+Subject: [PATCH] correct version number
+
+---
+ setup.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/setup.py b/setup.py
+index f51b6ea..280c490 100644
+--- a/setup.py
++++ b/setup.py
+@@ -21,7 +21,7 @@ and is distributed under the MIT license.
+ '''
+ 
+ setup(name='Keras_Applications',
+-      version='1.0.2',
++      version='1.0.4',
+       description='Reference implementations of popular deep learning models',
+       long_description=long_description,
+       author='Keras Team',
+-- 
+2.7.4
+
