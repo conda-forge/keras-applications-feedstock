@@ -1,6 +1,6 @@
 {% set name = "Keras-Applications" %}
-{% set version = "1.0.4" %}
-{% set sha256 = "37bd2f3ba9c0e0105c193999b1162fd99562cf43e5ef06c73932950ecc46d085" %}
+{% set version = "1.0.7" %}
+{% set sha256 = "8580a885c8abe4bf8429cb0e551f23e79b14eda73d99138cfa1d355968dd4b0a" %}
 
 package:
   name: {{ name|lower }}
@@ -10,10 +10,10 @@ source:
   url: https://github.com/keras-team/{{ name }}/archive/{{ version }}.tar.gz
   sha256: {{ sha256 }}
   patches:
-    - 0001-correct-version-number.patch
+    # - 0001-correct-version-number.patch
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: python -m pip install --no-deps --ignore-installed .
 
