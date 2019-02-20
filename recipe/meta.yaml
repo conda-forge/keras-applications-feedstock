@@ -10,7 +10,7 @@ source:
   url: https://github.com/keras-team/{{ name }}/archive/{{ version }}.tar.gz
   sha256: {{ sha256 }}
   patches:
-    - 0001-correct-version-number.patch
+    # - 0001-correct-version-number.patch
 
 build:
   number: 0
