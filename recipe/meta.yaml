@@ -13,7 +13,7 @@ source:
     # - 0001-correct-version-number.patch
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: python -m pip install --no-deps --ignore-installed .
 
@@ -23,9 +23,11 @@ requirements:
     - pip
   run:
     - python
-    - keras >=2.1.6
     - numpy >=1.9.1
     - h5py
+  # avoid a direct requirement on keras to prevent a circular dependency
+  run_constrained:
+    - keras >=2.1.6
 
 test:
   imports:
