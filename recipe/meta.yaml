@@ -1,6 +1,6 @@
 {% set name = "Keras-Applications" %}
-{% set version = "1.0.7" %}
-{% set sha256 = "8580a885c8abe4bf8429cb0e551f23e79b14eda73d99138cfa1d355968dd4b0a" %}
+{% set version = "1.0.8" %}
+{% set sha256 = "7c37f9e9ef93efac9b4956301cb21ce46c474ce9da41fac9a46753bab6823dfc" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
     # - 0001-correct-version-number.patch
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: python -m pip install --no-deps --ignore-installed .
 
